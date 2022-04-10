@@ -1,0 +1,9 @@
+num = 0.01
+sum = 0
+str = ""
+while num <= 1:
+    sum = sum + num
+    str = str + "{}+".format(round(num, 2))
+    num = round(num, 2) + 0.01
+str = str.rstrip("+")
+print(str + "={}".format(sum))
